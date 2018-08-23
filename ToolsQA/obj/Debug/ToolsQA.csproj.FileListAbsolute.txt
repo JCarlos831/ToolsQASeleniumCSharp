@@ -17,3 +17,5 @@ C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\obj\Debug\ToolsQA.exe
 C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\obj\Debug\ToolsQA.pdb
 C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\obj\Debug\ToolsQA.csprojAssemblyReference.cache
 C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\obj\Debug\ToolsQA.csproj.CopyComplete
+C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\bin\Debug\WebDriver.Support.dll
+C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\bin\Debug\WebDriver.Support.xml
