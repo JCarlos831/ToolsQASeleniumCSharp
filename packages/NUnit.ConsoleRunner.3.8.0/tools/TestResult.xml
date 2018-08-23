@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="18" result="Failed" total="18" passed="17" failed="1" inconclusive="0" skipped="0" asserts="1" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-08-23 18:47:58Z" end-time="2018-08-23 18:49:01Z" duration="63.379297">
+  <command-line><![CDATA[nunit3-console.exe  "C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\bin\Debug\ToolsQA.exe"]]></command-line>
+  <test-suite type="Assembly" id="0-1036" name="ToolsQA.exe" fullname="C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\bin\Debug\ToolsQA.exe" runstate="Runnable" testcasecount="18" result="Failed" site="Child" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:49:01Z" duration="62.159534" total="18" passed="17" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.10.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\Users\A-JMontoya\source\repos\ToolsQA\packages\NUnit.ConsoleRunner.3.8.0\tools" machine-name="HEISENBERG" user="A-JMontoya" user-domain="JEWELERSBOARD" culture="en-US" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\A-JMontoya\source\repos\ToolsQA\packages\NUnit.ConsoleRunner.3.8.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="ParallelScope" value="Fixtures" />
+      <property name="_PID" value="6896" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1037" name="ToolsQA" fullname="ToolsQA" runstate="Runnable" testcasecount="18" result="Failed" site="Child" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:49:01Z" duration="62.140196" total="18" passed="17" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="NUnitTest" fullname="ToolsQA.NUnitTest" classname="ToolsQA.NUnitTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:48:07Z" duration="8.217651" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <test-case id="0-1001" name="OpenTestApp" fullname="ToolsQA.NUnitTest.OpenTestApp" methodname="OpenTestApp" classname="ToolsQA.NUnitTest" runstate="Runnable" seed="829549171" result="Passed" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:48:07Z" duration="8.207939" asserts="0" />
+      </test-suite>
+      <test-suite type="TestSuite" id="0-1038" name="SeleniumBasics" fullname="ToolsQA.SeleniumBasics" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:49:01Z" duration="62.139717" total="17" passed="16" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="0-1002" name="Alerts" fullname="ToolsQA.SeleniumBasics.Alerts" classname="ToolsQA.SeleniumBasics.Alerts" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:48:08Z" duration="8.880775" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1003" name="Test" fullname="ToolsQA.SeleniumBasics.Alerts.Test" methodname="Test" classname="ToolsQA.SeleniumBasics.Alerts" runstate="Runnable" seed="1513220544" result="Failed" label="Error" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:48:08Z" duration="8.874646" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.UnhandledAlertException : unexpected alert open: {Alert text : A simple Alert}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.14393 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)
+   at OpenQA.Selenium.By.<>c__DisplayClass23_0.<CssSelector>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at ToolsQA.SeleniumBasics.Alerts.Test() in C:\Users\A-JMontoya\source\repos\ToolsQA\ToolsQA\SeleniumBasics\Alerts.cs:line 26]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1006" name="CheckBoxAndRadioButtonOperators" fullname="ToolsQA.SeleniumBasics.CheckBoxAndRadioButtonOperators" classname="ToolsQA.SeleniumBasics.CheckBoxAndRadioButtonOperators" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:48:11Z" duration="11.536285" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1007" name="PracticeExercise" fullname="ToolsQA.SeleniumBasics.CheckBoxAndRadioButtonOperators.PracticeExercise" methodname="PracticeExercise" classname="ToolsQA.SeleniumBasics.CheckBoxAndRadioButtonOperators" runstate="Runnable" seed="1955187206" result="Passed" start-time="2018-08-23 18:48:02Z" end-time="2018-08-23 18:48:11Z" duration="8.414242" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1004" name="BrowserNavigation" fullname="ToolsQA.SeleniumBasics.BrowserNavigation" classname="ToolsQA.SeleniumBasics.BrowserNavigation" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:47:59Z" end-time="2018-08-23 18:48:15Z" duration="15.615551" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1005" name="Practice" fullname="ToolsQA.SeleniumBasics.BrowserNavigation.Practice" methodname="Practice" classname="ToolsQA.SeleniumBasics.BrowserNavigation" runstate="Runnable" seed="625905411" result="Passed" start-time="2018-08-23 18:48:02Z" end-time="2018-08-23 18:48:15Z" duration="12.663037" asserts="0" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1010" name="ConfirmationAlerts" fullname="ToolsQA.SeleniumBasics.ConfirmationAlerts" classname="ToolsQA.SeleniumBasics.ConfirmationAlerts" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:08Z" end-time="2018-08-23 18:48:19Z" duration="11.506639" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1011" name="Test" fullname="ToolsQA.SeleniumBasics.ConfirmationAlerts.Test" methodname="Test" classname="ToolsQA.SeleniumBasics.ConfirmationAlerts" runstate="Runnable" seed="1894563836" result="Passed" start-time="2018-08-23 18:48:08Z" end-time="2018-08-23 18:48:19Z" duration="11.506079" asserts="0">
+            <output><![CDATA[This is the alert text: Confirm pop up with OK and Cancel button
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1020" name="DynamicWebTables" fullname="ToolsQA.SeleniumBasics.DynamicWebTables" classname="ToolsQA.SeleniumBasics.DynamicWebTables" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:19Z" end-time="2018-08-23 18:48:26Z" duration="6.775561" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1021" name="WebTablePractice" fullname="ToolsQA.SeleniumBasics.DynamicWebTables.WebTablePractice" methodname="WebTablePractice" classname="ToolsQA.SeleniumBasics.DynamicWebTables" runstate="Runnable" seed="1951628362" result="Passed" start-time="2018-08-23 18:48:22Z" end-time="2018-08-23 18:48:26Z" duration="4.419462" asserts="0">
+            <output><![CDATA[This is Header Row
+Websites		Popularity
+(unique		visitors		per		month)[1]		Front-end
+(Client-side)		Back-end
+(Server-side)		Database		Notes
+
+Google.com[2]		1,600,000,000		JavaScript		C, C++, Go,[3] Java, Python, PHP (HHVM)		Bigtable,[4] MariaDB[5]		The most used search engine in the world		
+Facebook.com		1,100,000,000		JavaScript		Hack, PHP (HHVM), Python, C++, Java, Erlang, D,[6] XHP,[7] Haskell[8]		MariaDB, MySQL,[9] HBase, Cassandra[10]		The most visited social networking site		
+YouTube.com		1,100,000,000		JavaScript		C, C++, Python, Java,[11] Go[12]		Vitess, BigTable, MariaDB[5][13]		The most visited video sharing site		
+Yahoo		750,000,000		JavaScript		PHP,		PostgreSQL, HBase, Cassandra, MongoDB,[14]		Yahoo is presently[when?] transitioning to Node.js[15]		
+Amazon.com		500,000,000		JavaScript		Java, C++, Perl[16]		Oracle Database[17]		Popular internet shopping site		
+Wikipedia.org		475,000,000		JavaScript		PHP, Hack		MariaDB[18]		"MediaWiki" is programmed in PHP, runs on HHVM; free online encyclopedia		
+Twitter.com		290,000,000		JavaScript		C++, Java, Scala, Ruby[19]		MySQL[20]		Popular social network.		
+Bing		285,000,000		JavaScript		C++		Microsoft SQL Server				
+eBay.com		285,000,000		JavaScript		Java,[21] JavaScript,[22] Scala[23]		Oracle Database		Online auction house		
+MSN.com		280,000,000		JavaScript		C#		Microsoft SQL Server		An email client, for simple use. Mostly known as "messenger".		
+Microsoft		270,000,000		JavaScript		C#		Microsoft SQL Server		One of the world's largest software companies.		
+Linkedin.com		260,000,000		JavaScript		Java, JavaScript,[24] Scala		Voldemort[25]		World's largest professional network.		
+Pinterest		250,000,000		JavaScript		Django,[26] Erlang		MySQL, Redis [27]				
+WordPress.com		240,000,000		JavaScript		PHP		MariaDB, MySQL				
+
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1016" name="DropDownAndSelectOperations" fullname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations" classname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:15Z" end-time="2018-08-23 18:48:27Z" duration="12.469337" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1017" name="Practice" fullname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations.Practice" methodname="Practice" classname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations" runstate="Runnable" seed="745712631" result="Passed" start-time="2018-08-23 18:48:17Z" end-time="2018-08-23 18:48:27Z" duration="9.956672" asserts="0">
+            <output><![CDATA[Asia
+Europe
+Africa
+Australia
+South America
+North America
+Antartica
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1008" name="ClosingAllWindows" fullname="ToolsQA.SeleniumBasics.ClosingAllWindows" classname="ToolsQA.SeleniumBasics.ClosingAllWindows" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:07Z" end-time="2018-08-23 18:48:32Z" duration="24.645716" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1009" name="ClosingAllWindowsTest" fullname="ToolsQA.SeleniumBasics.ClosingAllWindows.ClosingAllWindowsTest" methodname="ClosingAllWindowsTest" classname="ToolsQA.SeleniumBasics.ClosingAllWindows" runstate="Runnable" seed="799628899" result="Passed" start-time="2018-08-23 18:48:07Z" end-time="2018-08-23 18:48:32Z" duration="24.644051" asserts="0">
+            <output><![CDATA[Parent Window Handle: CDwindow-798FAA10CE611232AEEC70169F3D77C0
+Switching to window -> CDwindow-798FAA10CE611232AEEC70169F3D77C0
+Navigating to google.com
+Switching to window -> CDwindow-934EF2D778886BA4293339E70340EF7C
+Navigating to google.com
+Switching to window -> CDwindow-8CCF9303D801F289ED5C6E786657998B
+Navigating to google.com
+Switching to window -> CDwindow-E7DE747023406A2FB88384A88F707AB2
+Navigating to google.com
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1022" name="FindElementCommands" fullname="ToolsQA.SeleniumBasics.FindElementCommands" classname="ToolsQA.SeleniumBasics.FindElementCommands" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:26Z" end-time="2018-08-23 18:48:34Z" duration="7.802496" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1023" name="PracticeExercise1" fullname="ToolsQA.SeleniumBasics.FindElementCommands.PracticeExercise1" methodname="PracticeExercise1" classname="ToolsQA.SeleniumBasics.FindElementCommands" runstate="Runnable" seed="1978170102" result="Passed" start-time="2018-08-23 18:48:29Z" end-time="2018-08-23 18:48:34Z" duration="5.131448" asserts="0" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1018" name="DropDownAndSelectOperations_2" fullname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations_2" classname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations_2" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:15Z" end-time="2018-08-23 18:48:42Z" duration="27.019293" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1019" name="MultiSelect" fullname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations_2.MultiSelect" methodname="MultiSelect" classname="ToolsQA.SeleniumBasics.DropDownAndSelectOperations_2" runstate="Runnable" seed="1928736149" result="Passed" start-time="2018-08-23 18:48:18Z" end-time="2018-08-23 18:48:42Z" duration="24.345751" asserts="0">
+            <output><![CDATA[Browser Commands
+Navigation Commands
+Switch Commands
+Wait Commands
+WebElement Commands
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1024" name="FindElementCommands_2" fullname="ToolsQA.SeleniumBasics.FindElementCommands_2" classname="ToolsQA.SeleniumBasics.FindElementCommands_2" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:27Z" end-time="2018-08-23 18:48:43Z" duration="15.652042" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1025" name="PracticeExercise2" fullname="ToolsQA.SeleniumBasics.FindElementCommands_2.PracticeExercise2" methodname="PracticeExercise2" classname="ToolsQA.SeleniumBasics.FindElementCommands_2" runstate="Runnable" seed="99895057" result="Passed" start-time="2018-08-23 18:48:30Z" end-time="2018-08-23 18:48:43Z" duration="13.200552" asserts="0">
+            <output><![CDATA[Element (id = 0.0925914820428857-1)
+Clicked
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1028" name="MultipleWindow" fullname="ToolsQA.SeleniumBasics.MultipleWindow" classname="ToolsQA.SeleniumBasics.MultipleWindow" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:34Z" end-time="2018-08-23 18:48:47Z" duration="12.983368" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1029" name="MultiWindowTest" fullname="ToolsQA.SeleniumBasics.MultipleWindow.MultiWindowTest" methodname="MultiWindowTest" classname="ToolsQA.SeleniumBasics.MultipleWindow" runstate="Runnable" seed="155090596" result="Passed" start-time="2018-08-23 18:48:34Z" end-time="2018-08-23 18:48:47Z" duration="12.983120" asserts="0">
+            <output><![CDATA[Parent window's handle -> CDwindow-5F481BE6F52C1FF65352A02BAA1324C1
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1026" name="HandleMulitpleWindows" fullname="ToolsQA.SeleniumBasics.HandleMulitpleWindows" classname="ToolsQA.SeleniumBasics.HandleMulitpleWindows" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:32Z" end-time="2018-08-23 18:48:52Z" duration="20.152942" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1027" name="MultiWindowSwitchTest" fullname="ToolsQA.SeleniumBasics.HandleMulitpleWindows.MultiWindowSwitchTest" methodname="MultiWindowSwitchTest" classname="ToolsQA.SeleniumBasics.HandleMulitpleWindows" runstate="Runnable" seed="1514850330" result="Passed" start-time="2018-08-23 18:48:32Z" end-time="2018-08-23 18:48:52Z" duration="20.152714" asserts="0">
+            <output><![CDATA[Parent window's handle -> CDwindow-0BB43F06DF04FE164FC1DE5F47489161
+Switching to window -> CDwindow-0BB43F06DF04FE164FC1DE5F47489161
+Navigating to google.com
+Switching to window -> CDwindow-F2FA58F9A8FBF1366576FC1EC22F852F
+Navigating to google.com
+Switching to window -> CDwindow-04BABABAB13EEBC1A4CEB8059EE1C14B
+Navigating to google.com
+Switching to window -> CDwindow-376C3F3534CD32C74EB7E02EFC7AF2B2
+Navigating to google.com
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1032" name="PromptAlerts" fullname="ToolsQA.SeleniumBasics.PromptAlerts" classname="ToolsQA.SeleniumBasics.PromptAlerts" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:43Z" end-time="2018-08-23 18:48:56Z" duration="13.329708" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1033" name="Test" fullname="ToolsQA.SeleniumBasics.PromptAlerts.Test" methodname="Test" classname="ToolsQA.SeleniumBasics.PromptAlerts" runstate="Runnable" seed="155249169" result="Passed" start-time="2018-08-23 18:48:43Z" end-time="2018-08-23 18:48:56Z" duration="13.329468" asserts="0">
+            <output><![CDATA[This is the text from the alert: Do you like toolsqa?.
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1030" name="PrintMultipleWindowHandles" fullname="ToolsQA.SeleniumBasics.PrintMultipleWindowHandles" classname="ToolsQA.SeleniumBasics.PrintMultipleWindowHandles" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:42Z" end-time="2018-08-23 18:48:56Z" duration="14.222647" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1031" name="MultiWindowPrintTest" fullname="ToolsQA.SeleniumBasics.PrintMultipleWindowHandles.MultiWindowPrintTest" methodname="MultiWindowPrintTest" classname="ToolsQA.SeleniumBasics.PrintMultipleWindowHandles" runstate="Runnable" seed="635109245" result="Passed" start-time="2018-08-23 18:48:42Z" end-time="2018-08-23 18:48:56Z" duration="14.222399" asserts="0">
+            <output><![CDATA[Parent window's handle -> CDwindow-CAD4E84C3470037FC4120A51E3D666AD
+CDwindow-CAD4E84C3470037FC4120A51E3D666AD
+CDwindow-81AD4CF5B8627A8C2FAB4C5F3511EBD3
+CDwindow-841E764BFE802FD7478A160CA95ACB4C
+CDwindow-0CF0699BDE597DB48412287CD7F5FB4F
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1012" name="DriverCommands" fullname="ToolsQA.SeleniumBasics.DriverCommands" classname="ToolsQA.SeleniumBasics.DriverCommands" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:11Z" end-time="2018-08-23 18:48:59Z" duration="48.555107" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1013" name="PracticeExercise1" fullname="ToolsQA.SeleniumBasics.DriverCommands.PracticeExercise1" methodname="PracticeExercise1" classname="ToolsQA.SeleniumBasics.DriverCommands" runstate="Runnable" seed="927159040" result="Passed" start-time="2018-08-23 18:48:52Z" end-time="2018-08-23 18:48:59Z" duration="7.074501" asserts="0">
+            <properties>
+              <property name="ParallelScope" value="Self" />
+            </properties>
+            <output><![CDATA[The page title is: ONLINE STORE | Toolsqa Dummy Test site. The page length is: 38.
+The name of the URL is: http://store.demoqa.com/. The URL length is: 24.
+Here is the page source data: <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class=" chrome chrome68 windows js flexbox canvas canvastext no-touch postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache" style=""><head>
+<meta charset="UTF-8" />
+<title>ONLINE STORE | Toolsqa Dummy Test site</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://store.demoqa.com/wp-content/themes/mio/style.css" />
+<link rel="pingback" href="http://store.demoqa.com/xmlrpc.php" />
+<meta name="robots" content="noindex,follow" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//s.w.org" />
+<link rel="alternate" type="application/rss+xml" title="ONLINE STORE » Feed" href="http://store.demoqa.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ONLINE STORE » Comments Feed" href="http://store.demoqa.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="ONLINE STORE » SP Home Comments Feed" href="http://store.demoqa.com/sp-home/feed/" />
+<link rel="icon" type="image/x-icon" href="http://store.demoqa.com/wp-content/uploads/2014/08/Favicon-16X16.png" />
+		<div class="fit-vids-style">­<style>         			  .fluid-width-video-wrapper {        				 width: 100%;                     				 position: relative;              				 padding: 0;                      			  }                                   												  			  .fluid-width-video-wrapper iframe,  			  .fluid-width-video-wrapper object,  			  .fluid-width-video-wrapper embed {  				 position: absolute;              				 top: 0;                          				 left: 0;                         				 width: 100%;                     				 height: 100%;                    			  }                                   			</style></div><script type="text/javascript" async="" src="https://d31qbv1cthcecs.cloudfront.net/atrk.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/store.demoqa.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.7"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&amp;&amp;(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&amp;&amp;j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h&lt;i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[i[h]],"flag"!==i[h]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&amp;&amp;c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&amp;&amp;f.twemoji&amp;&amp;(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://store.demoqa.com/wp-includes/js/wp-emoji-release.min.js?ver=4.8.7" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="sp_wpec_styles-css" href="http://store.demoqa.com/wp-content/themes/mio/style-wpec.css?ver=2.2.4" type="text/css" media="all" />
+<link rel="stylesheet" id="sp_skin_styles-css" href="http://store.demoqa.com/wp-content/themes/mio/skins/skin2.css?ver=2.2.4" type="text/css" media="all" />
+<link rel="stylesheet" id="sp_mobile_styles-css" href="http://store.demoqa.com/wp-content/themes/mio/mobile-styles.css?ver=2.2.4" type="text/css" media="all" />
+<script type="text/javascript" src="http://store.demoqa.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/plugins/wp-e-commerce/wpsc-core/js/user.js?ver=3.12.4fb03617"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/modernizr.min.js?ver=2.6.2"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/respond.min.js?ver=1.1.0"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/audio.min.js?ver=2.2.4"></script>
+<link rel="https://api.w.org/" href="http://store.demoqa.com/wp-json/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://store.demoqa.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://store.demoqa.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="http://store.demoqa.com/" />
+<link rel="shortlink" href="http://store.demoqa.com/" />
+<link rel="alternate" type="application/json+oembed" href="http://store.demoqa.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fstore.demoqa.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://store.demoqa.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fstore.demoqa.com%2F&amp;format=xml" />
+<link rel="alternate" type="application/rss+xml" title="ONLINE STORE Product List RSS" href="http://store.demoqa.com?wpsc_action=rss" />
+<!--CONTROL PANEL AND DYNAMIC STYLES-->
+<style type="text/css">
+.single_product_display .imagecol {width:505px;}#tagline {font-size:13px;}
+nav#main-nav &gt; ul &gt; li &gt; a {font-size:13px !important;}
+nav#main-nav ul ul li a {font-size:13px !important;}
+nav#main-nav ul ul ul li a {font-size:13px !important;}
+</style>
+<!--END CONTROL PANEL AND DYNAMIC STYLES-->
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset&gt;div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f5f6f7;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title&gt;span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:-webkit-sticky;top:0}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+
+<body class="home page-template page-template-sp_home page-template-sp_home-php page page-id-11">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/QX17B8fU-Vm.js?version=42#channel=ff7b2c4e0671f&amp;origin=http%3A%2F%2Fstore.demoqa.com" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "facebook-jssdk"));</script>
+<div id="wrap-all">
+<div class="container">
+<div id="wrapper" class="hfeed">
+	<header class="group" id="header">
+            <!--LOGO--> 
+                        <a href="http://store.demoqa.com" title="home" id="logo">
+            <img src="http://store.demoqa.com/wp-content/uploads/2014/08/Tools-QA-2.png" alt="home" />            </a>
+            <!--END LOGO-->
+        <!--TAGLINE-->
+                        
+        <!--END TAGLINE-->
+        						            
+        <div id="header_cart"><a href="http://store.demoqa.com/products-page/checkout/" title="Checkout" class="cart_icon">
+                <em class="count">
+                						0					                          
+                        </em> <em class="item">item</em> | <span class="icon">Cart</span>Checkout<span class="shadow"></span></a>
+    	</div><!--close header_cart-->
+		        
+		<div id="account">
+            <a href="http://store.demoqa.com/products-page/your-account/" title="My Account" class="account_icon"><span class="icon">Account</span>My Account<span class="shadow"></span></a>
+        </div><!--close account-->
+        			            <nav class="group" id="main-nav">
+            <ul id="menu-main-menu" class="menu"><li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-15"><span class="before"> </span><a href="http://store.demoqa.com/"><span></span>Home</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-has-children menu-item-33 has_children"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/"><span></span>Product Category</a>
+<ul class="sub-menu" style="display: none;">
+	<li id="menu-item-34" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-34"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/accessories/"><span></span>Accessories</a></li>
+	<li id="menu-item-35" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-35"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/imacs/"><span></span>iMacs</a></li>
+	<li id="menu-item-36" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-36"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/ipads/"><span></span>iPads</a></li>
+	<li id="menu-item-37" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-37"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/iphones/"><span></span>iPhones</a></li>
+	<li id="menu-item-38" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-38"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/ipods/"><span></span>iPods</a></li>
+	<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-39"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/macbooks/"><span></span>MacBooks</a></li>
+</ul>
+</li>
+<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16 has_children"><span class="before"> </span><a><span></span>#0 (no title)</a>
+<ul class="sub-menu" style="display: none;">
+	<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><span class="before"> </span><a><span></span>#0 (no title)</a></li>
+	<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><span class="before"> </span><a><span></span>#0 (no title)</a></li>
+</ul>
+</li>
+<li id="menu-item-72" class="menu-item menu-item-type-taxonomy menu-item-object-wpsc_product_category menu-item-72"><span class="before"> </span><a href="http://store.demoqa.com/products-page/product-category/"><span></span>All Product</a></li>
+</ul> 
+        	<form action="http://store.demoqa.com/" method="get" class="searchform">
+    <fieldset>
+        
+        <input type="text" name="s" class="search" value="Search Products" />
+        <input type="hidden" value="wpsc-product" name="post_type" />
+    </fieldset>
+</form>
+            </nav>
+        <input type="hidden" value="2" id="skins" />        
+			              
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109033876-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109033876-2');
+</script>
+
+
+
+	</header>
+
+	<div id="content_container" class="group">
+			<div id="content" role="main" class="home group">
+            	<div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: auto; width: 960px; height: 300px; margin: 0px; overflow: hidden;"><div id="slides" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 6720px; height: 300px;">
+		                	<div class="slide">
+                        <div class="product_description">
+                            <h2>Magic Mouse</h2>
+                            <p>Splashing Pixels' WordPress e-commerce themes offer the best e-commerce solution for online stores. Our highly customizable WordPress e-commerce theme design and technology is unlike anything else on the market. We put an amazing amount of care and detail into the design and functionality to ensure that we're creating the best user experience for your customers.</p>
+                            <p><a href="http://store.demoqa.com/products-page/product-category/accessories/magic-mouse/" title="More Info">More Info &gt;</a></p>
+                        </div><!--close product_description-->
+                        
+                        <div class="featured_image">
+                                                        <a href="http://store.demoqa.com/products-page/product-category/accessories/magic-mouse/" title="Buy Now"><img src="http://store.demoqa.com/wp-content/themes/mio/sp-framework/timthumb/timthumb.php?src=http://store.demoqa.com/wp-content/uploads/2014/03/magicmouse.png&amp;h=500&amp;w=500&amp;zc=1&amp;q=90&amp;a=c&amp;s=&amp;f=&amp;cc=&amp;ct=" width="500" height="500" alt="Magic Mouse" /></a>
+                                                </div><!--close featured_image-->
+                        
+                        <div class="product_meta">
+                            <div class="price">
+                                <p>$150.00</p>
+                                <a href="http://store.demoqa.com/products-page/product-category/accessories/magic-mouse/" title="Buy Now" class="buynow"><span>Buy Now</span></a>
+                            </div><!--close price-->	
+                        </div><!--close product_meta-->
+                	</div><!--close slide-->
+                                                  	<div class="slide">
+                        <div class="product_description">
+                            <h2>iPhone 5</h2>
+                            <p>Splashing Pixels' WordPress e-commerce themes offer the best e-commerce solution for online stores. Our highly customizable WordPress e-commerce theme design and technology is unlike anything else on the market. We put an amazing amount of care and detail into the design and functionality to ensure that we're creating the best user experience for your customers. Our user friendly backend system makes it easy for WordPress users of all levels to understand and our customer support forum is her...</p>
+                            <p><a href="http://store.demoqa.com/products-page/product-category/n/" title="More Info">More Info &gt;</a></p>
+                        </div><!--close product_description-->
+                        
+                        <div class="featured_image">
+                                                        <a href="http://store.demoqa.com/products-page/product-category/n/" title="Buy Now"><img src="http://store.demoqa.com/wp-content/themes/mio/sp-framework/timthumb/timthumb.php?src=http://store.demoqa.com/wp-content/uploads/2014/03/timthumb.png&amp;h=500&amp;w=500&amp;zc=1&amp;q=90&amp;a=c&amp;s=&amp;f=&amp;cc=&amp;ct=" width="500" height="500" alt="iPhone 5" /></a>
+                                                </div><!--close featured_image-->
+                        
+                        <div class="product_meta">
+                            <div class="price">
+                                <p>$12.00</p>
+                                <a href="http://store.demoqa.com/products-page/product-category/n/" title="Buy Now" class="buynow"><span>Buy Now</span></a>
+                            </div><!--close price-->	
+                        </div><!--close product_meta-->
+                	</div><!--close slide-->
+                                                  	<div class="slide">
+                        <div class="product_description">
+                            <h2>iPod Nano Blue</h2>
+                            <p>Splashing Pixels' WordPress e-commerce themes offer the best e-commerce solution for online stores. Our highly customizable WordPress e-commerce theme design and technology is unlike anything else on the market. We put an amazing amount of care and detail into the design and functionality to ensure that we're creating the best user experience for your customers. Our user friendly backend system makes it easy for WordPress users of all levels to understand and our customer support forum is her...</p>
+                            <p><a href="http://store.demoqa.com/products-page/product-category/ipod-nano-blue/" title="More Info">More Info &gt;</a></p>
+                        </div><!--close product_description-->
+                        
+                        <div class="featured_image">
+                                                        <a href="http://store.demoqa.com/products-page/product-category/ipod-nano-blue/" title="Buy Now"><img src="http://store.demoqa.com/wp-content/themes/mio/sp-framework/timthumb/timthumb.php?src=http://store.demoqa.com/wp-content/uploads/2014/03/iPod-Nano-silver-on1.png&amp;h=500&amp;w=500&amp;zc=1&amp;q=90&amp;a=c&amp;s=&amp;f=&amp;cc=&amp;ct=" width="500" height="500" alt="iPod Nano Blue" /></a>
+                                                </div><!--close featured_image-->
+                        
+                        <div class="product_meta">
+                            <div class="price">
+                                <p>$0.00</p>
+                                <a href="http://store.demoqa.com/products-page/product-category/ipod-nano-blue/" title="Buy Now" class="buynow"><span>Buy Now</span></a>
+                            </div><!--close price-->	
+                        </div><!--close product_meta-->
+                	</div><!--close slide-->
+                                                </div></div><!--close slides-->
+              <ul id="slide_menu" class="group" style="display: block;">
+              	                    
+                                                      
+                                                      
+                                <a href="#" class="selected"><span>1</span></a><a href="#"><span>2</span></a><a href="#"><span>3</span></a></ul>
+                    <input type="hidden" value="8" class="homepage_slider_interval" />                           
+                    <input type="hidden" value="scroll" class="homepage_slider_effects" /> 
+                    <input type="hidden" value="500" class="homepage_slider_transition" /> 
+                    <input type="hidden" value="linear" class="homepage_slider_easing" /> 
+                    <input type="hidden" value="" class="homepage_slider_pause" />   
+                    <input type="hidden" value="left" class="homepage_slider_direction" /> 
+                    <input type="hidden" value="true" class="homepage_slider_touchswipe" />
+                    
+		
+                                    
+
+</div><!--close content-->
+
+	</div><!--close content_container-->
+
+	<footer role="contentinfo" id="footer">
+    	<section class="footer_blog">
+        	<p>Latest Blog Post: <input type="hidden" value="0" class="footer_rotator_delay" /></p>
+        </section>
+        
+        <section class="footer_featured">
+        	<ul class="group"><li><a href="http://store.demoqa.com/products-page/product-category/ipods/apple-ipod-touch-32gb-5th-generation-black/" title="Apple iPod touch 32GB 5th Generation - Black">Apple iPod touch 32GB 5th...</a><a href="http://store.demoqa.com/products-page/product-category/ipods/apple-ipod-touch-32gb-5th-generation-black/"><img src="http://store.demoqa.com/wp-content/themes/mio/sp-framework/timthumb/timthumb.php?src=http://store.demoqa.com/wp-content/uploads/2014/03/IPod-Large.png&amp;h=120&amp;w=205&amp;zc=1&amp;q=100&amp;a=c&amp;s=&amp;f=&amp;cc=&amp;ct=" title="Apple iPod touch 32GB 5th Generation - Black" alt="Apple iPod touch 32GB 5th Generation - Black" /></a><a href="http://store.demoqa.com/products-page/product-category/ipods/apple-ipod-touch-32gb-5th-generation-black/" class="more" title="More Details">More Details &gt;</a></li><li><a href="http://store.demoqa.com/products-page/product-category/n/" title="iPhone 5">iPhone 5</a><a href="http://store.demoqa.com/products-page/product-category/n/"><img src="http://store.demoqa.com/wp-content/themes/mio/sp-framework/timthumb/timthumb.php?src=http://store.demoqa.com/wp-content/uploads/2014/03/timthumb.png&amp;h=120&amp;w=205&amp;zc=1&amp;q=100&amp;a=c&amp;s=&amp;f=&amp;cc=&amp;ct=" title="iPhone 5" alt="iPhone 5" /></a><a href="http://store.demoqa.com/products-page/product-category/n/" class="more" title="More Details">More Details &gt;</a></li><li><a href="http://store.demoqa.com/products-page/product-category/accessories/magic-mouse/" title="Magic Mouse">Magic Mouse</a><a href="http://store.demoqa.com/products-page/product-category/accessories/magic-mouse/"><img src="http://store.demoqa.com/wp-content/themes/mio/sp-framework/timthumb/timthumb.php?src=http://store.demoqa.com/wp-content/uploads/2014/03/magicmouse.png&amp;h=120&amp;w=205&amp;zc=1&amp;q=100&amp;a=c&amp;s=&amp;f=&amp;cc=&amp;ct=" title="Magic Mouse" alt="Magic Mouse" /></a><a href="http://store.demoqa.com/products-page/product-category/accessories/magic-mouse/" class="more" title="More Details">More Details &gt;</a></li><li><a href="http://store.demoqa.com/products-page/product-category/accessories/apple-27-inch-thunderbolt-display/" title="Apple 27 inch Thunderbolt Display ">Apple 27 inch Thunderbolt...</a><a href="http://store.demoqa.com/products-page/product-category/accessories/apple-27-inch-thunderbolt-display/"><img src="http://store.demoqa.com/wp-content/themes/mio/sp-framework/timthumb/timthumb.php?src=http://store.demoqa.com/wp-content/uploads/2014/03/Mac-Monitor-White.png&amp;h=120&amp;w=205&amp;zc=1&amp;q=100&amp;a=c&amp;s=&amp;f=&amp;cc=&amp;ct=" title="Apple 27 inch Thunderbolt Display " alt="Apple 27 inch Thunderbolt Display " /></a><a href="http://store.demoqa.com/products-page/product-category/accessories/apple-27-inch-thunderbolt-display/" class="more" title="More Details">More Details &gt;</a></li></ul>
+        </section>
+               	<section id="footer_nav" class="group">
+            <!--SOCIAL MEDIA-->
+                        <div id="social-media" class="group">
+					<ul>
+<li class="pinterest"><a href="" title="Follow our Pins">Pinterest</a></li>
+<li class="gplus"><a href="" title="Checkout our Google Plus Profile">Google Plus</a></li>
+<li class="rss"><a href="http://store.demoqa.com/feed/" title="Get Fed on our Feeds">RSS</a></li>
+</ul>
+            </div><!--close social-media-->
+                        <!--END SOCIAL MEDIA-->  
+        
+            <p>
+                                            Copyright © Splashing Pixels, All Rights Reserved                            	</p>
+
+        	<nav id="footer-nav" class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-53"><a href="http://store.demoqa.com/">SP Home</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="http://store.demoqa.com/sample-page/">Sample Page</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="http://store.demoqa.com/products-page/your-account/">Your Account</a></li>
+</ul></nav>        </section>
+			<!--start lightbox hidden values-->
+            <input type="hidden" value="" id="lightbox_social" />
+            <input type="hidden" value="pp_default" id="lightbox_theme" />
+            <input type="hidden" value="" id="lightbox_slideshow" />
+            <input type="hidden" value="true" id="lightbox_show_overlay_gallery" />
+            <input type="hidden" value="true" id="lightbox_title" />
+            <input type="hidden" value="true" id="variation_image_swap" />
+            <!--end lightbox hidden values-->
+            <input type="hidden" value="" id="tabs_start_collapsed" />
+            
+	</footer>
+
+</div><!--close wrapper-->
+</div><!--close container-->
+</div><!--close wrap_all-->
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/jquery.prettyPhoto.js?ver=3.1.4"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/jquery.touchSwipe.js?ver=1.5.1"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/jquery.carouFredSel-packed.js?ver=6.1.0"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js?ver=1.9.2"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/video.min.js?ver=3.2.0"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/jquery.isotope.min.js?ver=1.5.25"></script>
+<script type="text/javascript">
+/* &lt;![CDATA[ */
+var sp_custom = {"ajaxurl":"http:\/\/store.demoqa.com\/wp-admin\/admin-ajax.php","ajaxCustomNonce":"ba94cf1182","framework_url":"http:\/\/store.demoqa.com\/wp-content\/themes\/mio\/sp-framework\/","theme_url":"http:\/\/store.demoqa.com\/wp-content\/themes\/mio\/","site_url":"http:\/\/store.demoqa.com\/","WPSC_CORE_IMAGES_URL":"http:\/\/store.demoqa.com\/wp-content\/plugins\/wp-e-commerce\/wpsc-core\/images","woo_active":"","wpec_active":"1","mobile_ready":"1","reset_email_sent":"Reset e-mail sent!","mobile_go_to_text":"Go to...","core_theme_version":"2.2.4","core_framework_version":"2.1.4"};
+/* ]]&gt; */
+</script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/themes/mio/js/theme.min.js?ver=2.2.4"></script>
+<script type="text/javascript">
+/* &lt;![CDATA[ */
+var wpsc_ajax = {"ajaxurl":"http:\/\/store.demoqa.com\/wp-admin\/admin-ajax.php"};
+/* ]]&gt; */
+</script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-content/plugins/wp-e-commerce/wpsc-core/js/wp-e-commerce.js?ver=3.12.4"></script>
+<script type="text/javascript" src="http://store.demoqa.com/wp-includes/js/wp-embed.min.js?ver=4.8.7"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49030851-1', 'toolsqa.com');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"SJusj1agkg00ga", domain:"toolsqa.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript>&lt;img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=SJusj1agkg00ga" style="display:none" height="1" width="1" alt="" /&gt;</noscript>
+<!-- End Alexa Certify Javascript --> 
+
+
+</body></html>. Its length is 39579.
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1034" name="SimpleAlerts" fullname="ToolsQA.SeleniumBasics.SimpleAlerts" classname="ToolsQA.SeleniumBasics.SimpleAlerts" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:47Z" end-time="2018-08-23 18:49:00Z" duration="12.911762" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1035" name="SimpleAlertsTest" fullname="ToolsQA.SeleniumBasics.SimpleAlerts.SimpleAlertsTest" methodname="SimpleAlertsTest" classname="ToolsQA.SeleniumBasics.SimpleAlerts" runstate="Runnable" seed="930342696" result="Passed" start-time="2018-08-23 18:48:47Z" end-time="2018-08-23 18:49:00Z" duration="12.911490" asserts="0">
+            <output><![CDATA[The alert text is: A simple Alert
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1014" name="DriverCommands_2" fullname="ToolsQA.SeleniumBasics.DriverCommands_2" classname="ToolsQA.SeleniumBasics.DriverCommands_2" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-08-23 18:48:13Z" end-time="2018-08-23 18:49:01Z" duration="48.414813" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <test-case id="0-1015" name="PracticeExercise2" fullname="ToolsQA.SeleniumBasics.DriverCommands_2.PracticeExercise2" methodname="PracticeExercise2" classname="ToolsQA.SeleniumBasics.DriverCommands_2" runstate="Runnable" seed="581284698" result="Passed" start-time="2018-08-23 18:48:56Z" end-time="2018-08-23 18:49:01Z" duration="5.070369" asserts="0">
+            <properties>
+              <property name="ParallelScope" value="Self" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

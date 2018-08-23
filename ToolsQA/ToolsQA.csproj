@@ -62,8 +62,11 @@
     <Compile Include="EntryPoint.cs" />
     <Compile Include="NUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeleniumBasics\Alerts.cs" />
     <Compile Include="SeleniumBasics\BrowserNavigation.cs" />
     <Compile Include="SeleniumBasics\CheckBoxAndRadioButtonOperators.cs" />
+    <Compile Include="SeleniumBasics\ClosingAllWindows.cs" />
+    <Compile Include="SeleniumBasics\ConfirmationAlerts.cs" />
     <Compile Include="SeleniumBasics\DriverCommands.cs" />
     <Compile Include="SeleniumBasics\DriverCommands_2.cs" />
     <Compile Include="SeleniumBasics\DropDownAndSelectOperations.cs" />
@@ -71,6 +74,11 @@
     <Compile Include="SeleniumBasics\DynamicWebTables.cs" />
     <Compile Include="SeleniumBasics\FindElementCommands.cs" />
     <Compile Include="SeleniumBasics\FindElementCommands_2.cs" />
+    <Compile Include="SeleniumBasics\HandleMulitpleWindows.cs" />
+    <Compile Include="SeleniumBasics\MultipleWindow.cs" />
+    <Compile Include="SeleniumBasics\PrintMultipleWindowHandles.cs" />
+    <Compile Include="SeleniumBasics\PromptAlerts.cs" />
+    <Compile Include="SeleniumBasics\SimpleAlerts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
